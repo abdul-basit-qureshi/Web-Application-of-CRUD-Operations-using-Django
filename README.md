@@ -2,7 +2,7 @@
 This project is a simple web application that demonstrates how to perform CRUD (Create, Read, Update, and Delete) operations using Django, a powerful web framework for building web applications. It includes a basic user interface that allows users to create, read, update, and delete data from a database.
 
 ## Installation
-Clone the repository: git clone https://github.com/abdul-basit-qureshi/Web-application-of-CRUD-Operations-using-Django.git <br>
+Clone the repository: git clone https://github.com/abdul-basit-qureshi/Web-Application-of-CRUD-Operations-using-Django.git <br>
 Create a virtual environment: python3 -m venv env <br>
 Run the migrations: python manage.py migrate <br>
 Run the server: python manage.py runserver <br>
