@@ -1,0 +1,30 @@
+{% extends 'employee_register/base.html' %}
+<!-- To use crispy-forms in html file, add this on top of file -->
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}  <!-- this avoid hacking-->
+    <!-- {{ form|crispy }} -->
+    {{ form.fullname|as_crispy_field }}
+    {{ form.mobile|as_crispy_field }}
+    <div class="row">   <!--to show empCode & position in same row-->
+        <div class="col-md-4">
+            {{ form.emp_code|as_crispy_field }}
+        </div>
+        <div class="col-md-8">
+            {{ form.position|as_crispy_field }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">  <!--adding a submit button-->
+            <button type="submit" class="btn btn-success btn-block btn-lg"><i class="fas fa-database"></i> Submit</button> <!-- https://fontawesome.com/icon -->
+        </div>
+        <div class="col-md-4">  <!--adding a list button-->
+            <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Back to list
+            </a>
+        </div>
+    </div>  
+</form>
+{% endblock %}
