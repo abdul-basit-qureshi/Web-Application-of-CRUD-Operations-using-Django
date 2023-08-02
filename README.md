@@ -10,6 +10,7 @@ Run the server: python manage.py runserver <br>
 ## Usage
 Once you have installed and set up the project, you can access the CRUD interface by visiting http://localhost:8000 in your web browser. You can use the interface to create, read, update, and delete data from the database.
 
-## Contributing
-Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request.
+## Acknowledgments
+
+This project was created with the help of the Django documentation and various online tutorials. Thanks to the Django community for creating such a great framework!
 
